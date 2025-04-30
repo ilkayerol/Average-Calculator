@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <AutoCompleteTextView
+        android:id="@+id/etNewClassName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="AutoCompleteTextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnNewAddNewClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnNewClassCredit"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/credits"
+        app:layout_constraintBottom_toBottomOf="@+id/spnNewClassPoint"
+        app:layout_constraintEnd_toStartOf="@+id/spnNewClassPoint"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewClassName" />
+
+    <Spinner
+        android:id="@+id/spnNewClassPoint"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/allPoints"
+        app:layout_constraintEnd_toStartOf="@+id/btnNewAddNewClass"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spnNewClassCredit"
+        app:layout_constraintTop_toBottomOf="@+id/etNewClassName" />
+
+    <ImageButton
+        android:id="@+id/btnNewAddNewClass"
+        android:layout_width="100dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="X"
+        android:src="@drawable/x"
+        android:scaleType="fitXY"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
